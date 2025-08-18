@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projetos — José Pedro</title>
+  <!-- pode usar o mesmo pages.css das páginas internas -->
+  <link rel="stylesheet" href="pages.css" />
+  <style>
+    /* Estilo mínimo só para esta listagem */
+    body{display:flex;flex-direction:column;min-height:100vh}
+    .wrap{max-width:1100px;margin:28px auto;padding:0 20px;flex:1}
+    .title{font-size:2rem;font-weight:800;margin:12px 0 8px}
+    .lead{color:#cfd5ff;margin-bottom:22px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .tile{display:block;padding:24px;border-radius:14px;border:1px solid #22284d;
+      background:#151936;color:#f2f4ff;text-decoration:none;box-shadow:0 6px 20px #0003;
+      transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease}
+    .tile:hover{transform:translateY(-4px);box-shadow:0 10px 28px #0005;border-color:#6c8cff}
+    .tile h3{margin:0 0 8px;font-size:1.2rem}
+    .tile p{margin:0;color:#cfd5ff}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <!-- Aviso central -->
+  <div style="text-align:center;padding:14px 10px;font-weight:800;font-size:1.05rem;
+              background:linear-gradient(145deg,#6c8cff,#ff9f4d);color:#fff;">
+    Assista as páginas funcionando e acesse a demo/código
+  </div>
+
+  <header class="mini-header">
+    <nav class="mini-nav">
+      <a href="/index.html">← Voltar</a>
+      <span class="mini-brand">José Pedro • Projetos</span>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1 class="title">Projetos</h1>
+    <p class="lead">Selecione um projeto abaixo:</p>
+
+    <div class="grid">
+      <a class="tile" href="catalogo.html">
+        <h3>Catálogo</h3>
+        <p>Listagem simples com foco em exibição de itens.</p>
+      </a>
+
+      <a class="tile" href="projetofinal.html">
+        <h3>Projeto Final</h3>
+        <p>Apresentação do projeto principal (banca).</p>
+      </a>
+
+      <a class="tile" href="similar.html">
+        <h3>Similar</h3>
+        <p>Comparativo e melhorias em relação ao primeiro projeto.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="mini-footer">
+    <small>© <span id="year"></span> José Pedro</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
