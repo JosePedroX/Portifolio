@@ -15,7 +15,7 @@
 
   <header class="mini-header">
     <nav class="mini-nav">
-      <a href="/index.html">← Voltar</a>
+      <a href="/Portifolio/projetos/paginas.html">← Voltar</a>
       <span class="mini-brand">• Projeto Similar</span>
     </nav>
   </header>
@@ -25,7 +25,26 @@
       <h1>Similar</h1>
       <p>Versão simples para demonstração. Use os botões abaixo para acessar a demo e o código.</p>
       <div class="mini-actions">
-        <a class="btn" href="#" target="_blank" rel="noopener">Ver vídeo</a>
+     
+  <button id="video-btn" class="btn" onclick="mostrarVideo()">Ver vídeo</button>
+</div>
+
+<!-- Player de vídeo escondido -->
+<div id="video-container" style="display:none; margin-top:20px; text-align:center;">
+  <video width="640" height="360" controls autoplay>
+    <source src="/Portifolio/projetos/videosapresentacao/similarvideo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</div>
+
+<script>
+  function mostrarVideo() {
+    document.getElementById("video-container").style.display = "block";
+    document.getElementById("video-btn").style.display = "none";
+  }
+</script>
+
+
       </div>
     </section>
 
