@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página — Catálogo</title>
+  <link rel="stylesheet" href="/Portifolio/projetos/pages.css"/>
+  <meta name="description" content="Página Catálogo do portfólio.">
+</head>
+<body>
+  <div style="text-align:center; padding:16px 12px; font-weight:800; font-size:1.05rem;">
+    Assista a página <span style="color:#6c8cff;">Catálogo</span> funcionando
+  </div>
+
+  <header class="mini-header">
+    <nav class="mini-nav">
+      <a href="/Portifolio/projetos/paginas.html">← Voltar</a>
+      <span class="mini-brand">• Catálogo</span>
+    </nav>
+  </header>
+
+  <main class="mini-main">
+    <section class="mini-hero">
+      <h1>Catálogo</h1>
+      <p>Feito em um módulo de dessenvolvimento e aprendizado para HTML5, CSS e JavaScript.</p>
+
+      <div class="mini-actions">
+        <button id="video-btn" class="btn" onclick="mostrarVideo()">Ver vídeo</button>
+      </div>
+
+      <div id="video-container" style="display:none; margin-top:20px; text-align:center;">
+        <video width="640" height="360" controls autoplay>
+          <source src="/Portifolio/projetos/videosapresentacao/catalogovideo.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section class="mini-info">
+      <h2>Resumo</h2>
+      <p>A idéia do projeto era criar um site com alguns gostos pessoais na época. Priorzando pelo menos 3 gêneros artísticos, com 2 referências cada. Foram escolhidos os gêneros: música, fillme e série para fim de aprendizado.</p>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <small>© <span id="year"></span> José Pedro</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function mostrarVideo() {
+      document.getElementById("video-container").style.display = "block";
+      document.getElementById("video-btn").style.display = "none";
+    }
+  </script>
+</body>
+</html>

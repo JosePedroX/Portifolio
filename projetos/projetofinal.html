@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página — Projeto Final</title>
+  <link rel="stylesheet" href="pages.css" />
+  <meta name="description" content="Página Projeto Final do portfólio.">
+</head>
+<body>
+  <!-- Aviso central -->
+  <div style="text-align:center; padding:16px 12px; font-weight:800; font-size:1.05rem;">
+    Assista a página <span style="color:#6c8cff;">Projeto Final</span> funcionando
+  </div>
+
+  <header class="mini-header">
+    <nav class="mini-nav">
+      <a href="/Portifolio/projetos/paginas.html">← Voltar</a>
+      <span class="mini-brand">• Projeto Final</span>
+    </nav>
+  </header>
+
+  <main class="mini-main">
+    <section class="mini-hero">
+      <h1>Projeto Final</h1>
+      <p>Página complexa para análise da banca examinadora.</p>
+      <div class="mini-actions">
+          <button id="video-btn" class="btn" onclick="mostrarVideo()">Ver vídeo</button>
+</div>
+
+<!-- Player de vídeo escondido -->
+<div id="video-container" style="display:none; margin-top:20px; text-align:center;">
+  <video width="640" height="360" controls autoplay>
+    <source src="/Portifolio/projetos/videosapresentacao/readzoneviddeo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</div>
+
+<script>
+  function mostrarVideo() {
+    document.getElementById("video-container").style.display = "block"; 
+    document.getElementById("video-btn").style.display = "none";
+  }
+</script>
+      </div>
+    </section>
+
+    <section class="mini-info">
+      <h2>Resumo</h2>
+      <p>Este site foi desenvolvido em 2 meses, juntamente com uma API integrada a um banco de dados, com o objetivo de demonstrar habilidade e capacidade na criação de soluções funcionais e eficientes em caso de contratação por uma empresa.</p>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <small>© <span id="year"></span> José Pedro</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>

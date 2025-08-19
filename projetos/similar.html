@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página — Similar</title>
+  <link rel="stylesheet" href="pages.css" />
+  <meta name="description" content="Página Similar do portfólio.">
+</head>
+<body>
+  <!-- Aviso central -->
+  <div style="text-align:center; padding:16px 12px; font-weight:800; font-size:1.05rem;">
+    Assista a página <span style="color:#6c8cff;">Similar</span> funcionando
+  </div>
+
+  <header class="mini-header">
+    <nav class="mini-nav">
+      <a href="/Portifolio/projetos/paginas.html">← Voltar</a>
+      <span class="mini-brand">• Projeto Similar</span>
+    </nav>
+  </header>
+
+  <main class="mini-main">
+    <section class="mini-hero">
+      <h1>Similar</h1>
+      <p>Projeto para mostrar evolução e rapidez.</p>
+      <div class="mini-actions">
+     
+  <button id="video-btn" class="btn" onclick="mostrarVideo()">Ver vídeo</button>
+</div>
+
+<!-- Player de vídeo escondido -->
+<div id="video-container" style="display:none; margin-top:20px; text-align:center;">
+  <video width="640" height="360" controls autoplay>
+    <source src="/Portifolio/projetos/videosapresentacao/similarvideo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</div>
+
+<script>
+  function mostrarVideo() {
+    document.getElementById("video-container").style.display = "block";
+    document.getElementById("video-btn").style.display = "none";
+  }
+</script>
+
+
+      </div>
+    </section>
+
+    <section class="mini-info">
+      <h2>Resumo</h2>
+      <p>Esse site foi desenvolvido em apenas 4 horas para mostrar minha evolução pessoal e na agilidade em fazer um site simples, em comparação ao site catálogo.</p>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <small>© <span id="year"></span> José Pedro</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
