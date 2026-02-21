@@ -38,8 +38,6 @@ body{
   font-size: 17px;                 /* +1 para leitura */
   letter-spacing: .1px;
   background:
-    radial-gradient(1100px 700px at 20% -10%, #1a2050 0%, transparent 58%),
-    radial-gradient(900px 550px at 120% 10%, #241b55 0%, transparent 52%),
     var(--bg);
   color: var(--text);
   line-height: 1.75;
@@ -111,7 +109,11 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--ring); outline-o
 .hero-copy h1{ font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 0 0 10px; }
 .hero-copy p{ color: var(--text-weak); margin: 0 0 20px; }
 
-
+.hero {
+   background:
+    radial-gradient(1100px 700px at 20% -10%, #1a2050 0%, transparent 58%),
+    radial-gradient(900px 550px at 120% 10%, #241b55 0%, transparent 52%),
+}
 .hero-card{
   border:1px solid var(--border); border-radius: 16px;
   background: color-mix(in oklab, var(--card), #fff 4%);
