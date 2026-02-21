@@ -115,11 +115,11 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--ring); outline-o
 .hero-card{
   border:1px solid var(--border); border-radius: 16px;
   background: color-mix(in oklab, var(--card), #fff 4%);
-  min-height: 450px; position: relative; overflow:hidden;
+  min-height: 230px; position: relative; overflow:hidden;
   box-shadow: var(--shadow);
 }
 .hero-card{
-  width: 500px;       
+  width: 380px;       
   flex-shrink: 0;       
 }
 .hero-grid{
