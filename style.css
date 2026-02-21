@@ -106,11 +106,16 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--ring); outline-o
 .btn-ghost:hover{ border-color: color-mix(in oklab, var(--border), var(--text) 35%); }
 
 
-.hero{ padding: 86px 0 54px; }
+.hero{
+  padding: 86px 0 120px; 
+  min-height: 90vh;    
+  position: relative;
+}
 .hero-grid{ display:grid; gap: 28px; grid-template-columns: 1.1fr .9fr; }
 .hero-copy h1{ font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 0 0 10px; }
-.hero-copy p{ color: var(--text-weak); margin: 0 0 20px; }
-
+.hero-copy p{
+  max-width: 55ch; 
+}
 
 .hero-card{
   border:1px solid var(--border); border-radius: 16px;
