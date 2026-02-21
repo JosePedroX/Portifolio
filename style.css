@@ -106,7 +106,7 @@ a:focus-visible, button:focus-visible{ outline: 2px solid var(--ring); outline-o
 
 .hero{ padding: 86px 0 54px; }
 .hero-grid{ display:grid; gap: 28px; grid-template-columns: 1.1fr .9fr; }
-.hero-copy h1{ font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 0 0 10px; }
+.hero-copy h1{ font-size: clamp(1.1rem, 3.6vw, 2rem); margin: 0 0 10px; }
 .hero-copy p{ color: var(--text-weak); margin: 0 0 20px; }
 
 .hero {
